@@ -1,0 +1,51 @@
+/* donor-records.css */
+
+.donorCounter {
+
+  margin-top: -200px;
+  justify-content: center;
+
+}
+.donor-records {
+    margin-top: 20px;
+    background-color: lemonchiffon;
+    margin-top: -100;
+  }
+  
+  .donor-records h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+  }
+  .heading {
+    color: white;
+  }
+  
+  .donor-records table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .donor-records th,
+  .donor-records td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .donor-records th {
+    background-color: #f2f2f2;
+  }
+  
+  .donor-records tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .donor-records p {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+ 
+  

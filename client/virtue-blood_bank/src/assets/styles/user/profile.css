@@ -1,0 +1,212 @@
+/* UserProfile component styling */
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0vh;
+  background: #23242a;
+  width: 480px;
+  height: 550px;
+ 
+}
+
+.user-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #23242a;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 580px;
+  height: 600px;
+  top: -100%;
+}
+
+.user-profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF416C;
+  margin-bottom: 10px;
+}
+
+.user-profile-details h1 {
+  color: #FF416C;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.user-profile-details p {
+  font-size: .9em;
+  margin-bottom: 3px;
+  color: white;
+}
+
+/* Toast notifications styling */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+
+
+
+
+/* General styling */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh;
+  background: #23242a;
+}
+
+.user-profile-box {
+  position: relative;
+  width: 580px;
+  height: 650px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 50%;
+}
+
+.user-profile-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent,  #FF416C,  #FF416C);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.user-profile-box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent,  #FF416C,  #FF416C);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.user-profile-form {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background-color: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.user-profile-form h2 {
+  color:  #FF416C;
+  font-weight: 500;
+  align-items: center;
+  letter-spacing: 0.1em;
+}
+.user-profile-inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.user-profile-inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+.user-profile-inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.user-profile-inputBox input:valid ~ span,
+.user-profile-inputBox input:focus ~ span {
+  color:  #FF416C;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}
+.user-profile-inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #FF416C;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.user-profile-inputBox input:valid ~ i,
+.user-profile-inputBox input:focus ~ i {
+  height: 44px;
+}
+.user-profile-links {
+  display: flex;
+  justify-content: space-between;
+}
+.user-profile-links a {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+.user-profile-links a:hover,
+.user-profile-links a:nth-child(2) {
+  color: #FF416C;
+}
+user-profile-input[type="button"] {
+  border: 1px solid #FF416C;
+  outline: none;
+  background: transparent;
+  color:#fff;
+  padding: 11px 25px;
+  width: 100px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+user-profile-input[type="button"]:hover{
+background:  #FF416C;
+color: #23242a;
+}
+user-profile-input[type="button"]:active {
+  opacity: 0.8;
+}

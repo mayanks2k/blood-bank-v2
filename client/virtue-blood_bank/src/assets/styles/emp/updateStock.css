@@ -1,0 +1,76 @@
+/* Other styles ... */
+
+.table-heading5 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.center5 {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-right: 180px;
+}
+
+.table-responsive5 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.table {
+  width: 120%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Style for the specified columns */
+.table th:nth-child(1),
+.table th:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(1),
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  background-color: #333;
+  color: #fff; /* Change font color to white */
+}
+
+.input-field5 {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: white;
+  font-size: 12px;
+}
+
+.update-button5 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button5:hover {
+  background-color: #0056b3;
+}
